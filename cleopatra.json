@@ -1,10 +1,16 @@
 {
-    "name": "Deployment Phase",
-    "type": "local",
-    "default": true,
-    "clone": true,
     "config": {
-        "type": "manual"
+        "type": "manual",
+        "overrides": []
     },
-    "steps": []
+
+    "deploy": [
+        {
+            "name": "Deployment Phase",
+            "type": "local",
+            "default": true,
+            "clone": true,
+            "steps": []
+        }
+    ]
 }
