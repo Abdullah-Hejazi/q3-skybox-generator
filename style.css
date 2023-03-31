@@ -1,0 +1,152 @@
+body {
+    background-color: #111111;
+    color: #fff;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+
+    background-color: #222222;
+}
+
+.input-container {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #353535;
+    color: #fff;
+}
+
+.input-container:focus {
+    outline: none;
+}
+
+.button {
+    background-color: #3b853e;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
+
+img {
+    width: 200px;
+}
+
+#generating {
+    visibility: hidden;
+
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.generating-loading {
+    animation: spin 2s linear infinite;
+    z-index: 1;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#faces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.face {
+    padding: 20px;
+    background-color: rgb(37, 37, 37);
+
+    border-radius: 20px;
+
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.face-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+}
+
+.face-title {
+    font-size: 18px;
+    margin: 0px;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#shader {
+    visibility: hidden;
+}
+
+#clickhint {
+    text-align: center;
+    font-size: 20px;
+    visibility: hidden;
+}
+
+.shader-pre {
+    background-color: #222222;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    margin: 20px;
+}
+
+#shaderdownload {
+    margin: 50px;
+    text-align: center;
+}
+
+.space {
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Q3 Skybox Generator</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="top-bar">
+		<input class="input-container" type="file" name="file_upload" id="imageInput" accept="image/*">
+		<input class="input-container" type="text" name="text_input" id="shadername" placeholder="Shader Name">
+		<input type="submit" value="Generate" class="button" onclick="startGenerating()">
+	</div>
+
+	<div id="generating">
+		<svg width="100px" height="100px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none" class="generating-loading">
+			<g fill="#000000" fill-rule="evenodd" clip-rule="evenodd">
+				<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8z" opacity=".2" fill="white"/>
+				<path d="M7.25.75A.75.75 0 018 0a8 8 0 018 8 .75.75 0 01-1.5 0A6.5 6.5 0 008 1.5a.75.75 0 01-.75-.75z" fill="white"/>
+			</g>
+		</svg>
+
+		<h4>Generating...</h4>
+	</div>
+
+	<div>
+		<p id="clickhint">Click on an Image to download it.</p>
+	</div>
+
+    <section>
+		<div id="cubemap">
+			<output id="faces">
+			</output>
+		</div>
+    </section>
+
+	<section>
+		<div id="shader">
+			<pre id="shadercode" class="shader-pre" lang="js"></pre>
+
+			<div id="shaderdownload">
+				<a id="shaderlink" class="button" href="#" download="shader.txt">Download Shader</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="space"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
