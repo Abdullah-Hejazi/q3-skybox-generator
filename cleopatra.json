@@ -1,0 +1,8 @@
+{
+    "name": "Deployment Phase",
+    "type": "local",
+    "default": true,
+    "clone": true,
+    "config": {},
+    "steps": []
+}
