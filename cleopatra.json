@@ -10,7 +10,14 @@
             "type": "local",
             "default": true,
             "clone": true,
-            "steps": []
+            "steps": [
+                {
+                    "name": "Finalize",
+                    "commands": [
+                        "ln -sfn $DEPLOYMENT_PATH ../../current"
+                    ]
+                }
+            ]
         }
     ]
 }
