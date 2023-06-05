@@ -182,7 +182,8 @@ function generateShaderFile() {
 	
 	let shaderText = `textures/${shadername}/${shadername}`
 
-	shaderText += ` {
+	shaderText += ` 
+	{
 	qer_editorimage textures/${shadername}/${shadername}_ft.jpg
 	surfaceparm noimpact
 	surfaceparm nolightmap
